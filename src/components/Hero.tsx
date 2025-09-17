@@ -50,7 +50,7 @@ const Hero = () => {
               <Calendar className="h-5 w-5" />
               Book Your Ride Now
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white/80 text-white bg-white/10 hover:bg-white hover:text-primary backdrop-blur-sm">
               <Phone className="h-5 w-5" />
               Call (972) 555-KAND
             </Button>
