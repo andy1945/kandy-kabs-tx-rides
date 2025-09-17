@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://kustandy.github.io/kandy-kabs-tx-rides",
+  "homepage": "https://andy1945.github.io/kandy-kabs-tx-rides",
   "type": "module",
   "scripts": {
     "dev": "vite",
