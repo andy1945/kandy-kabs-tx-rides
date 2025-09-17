@@ -17,33 +17,35 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Door-to-door transportation with dignity
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
+            <span className="inline-block animate-slide-up [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards]">Door-to-door</span>{" "}
+            <span className="inline-block animate-slide-up [animation-delay:0.6s] opacity-0 [animation-fill-mode:forwards]">transportation</span>{" "}
+            <span className="inline-block animate-slide-up [animation-delay:0.8s] opacity-0 [animation-fill-mode:forwards] bg-gradient-to-r from-accent-light to-success bg-clip-text text-transparent">with dignity</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            Wheelchair accessible rides, chemo & dialysis trips, nursing-home and hospital visits, 
-            and friendly caregiver drivers who treat your loved ones like family.
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in [animation-delay:1s] opacity-0 [animation-fill-mode:forwards]">
+            <span className="inline-block animate-fade-in [animation-delay:1.2s] opacity-0 [animation-fill-mode:forwards]">Wheelchair accessible rides, chemo & dialysis trips, nursing-home and hospital visits,</span>{" "}
+            <span className="inline-block animate-fade-in [animation-delay:1.4s] opacity-0 [animation-fill-mode:forwards]">and friendly caregiver drivers who treat your loved ones like family.</span>
           </p>
           
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm animate-scale-in [animation-delay:1.6s] opacity-0 [animation-fill-mode:forwards]">
+            <div className="flex items-center gap-2 animate-slide-up [animation-delay:1.8s] opacity-0 [animation-fill-mode:forwards] transform translate-y-4">
               <Shield className="h-5 w-5" />
               <span>Licensed & Insured</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 animate-slide-up [animation-delay:2s] opacity-0 [animation-fill-mode:forwards] transform translate-y-4">
               <Heart className="h-5 w-5" />
               <span>Compassionate Care</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 animate-slide-up [animation-delay:2.2s] opacity-0 [animation-fill-mode:forwards] transform translate-y-4">
               <Users className="h-5 w-5" />
               <span>Family-Trusted</span>
             </div>
           </div>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in [animation-delay:2.4s] opacity-0 [animation-fill-mode:forwards]">
             <Button variant="hero" size="lg" className="text-lg px-8 py-6">
               <Calendar className="h-5 w-5" />
               Book Your Ride Now
