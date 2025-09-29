@@ -1,8 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar, Shield, Heart, Users } from "lucide-react";
 import heroImage from "@/assets/hero-transportation.jpg";
+import { useTypewriter } from "@/hooks/useTypewriter";
 
 const Hero = () => {
+  const typewriterText = useTypewriter({
+    words: [
+      "Wheelchair accessible rides",
+      "Chemo & dialysis trips", 
+      "Nursing-home and hospital visits"
+    ],
+    typeSpeed: 80,
+    deleteSpeed: 50,
+    delaySpeed: 2000,
+  });
+
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -23,7 +35,12 @@ const Hero = () => {
             <span className="inline-block animate-slide-up [animation-delay:0.6s] opacity-0 [animation-fill-mode:forwards] bg-gradient-to-r from-accent-light to-success bg-clip-text text-transparent">transportation</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in [animation-delay:1s] opacity-0 [animation-fill-mode:forwards]">
-            Wheelchair accessible rides with compassionate drivers who care for your loved ones.
+            <span className="inline-block min-h-[2em]">
+              {typewriterText}
+              <span className="animate-pulse">|</span>
+            </span>
+            <br />
+            <span className="text-lg">with compassionate drivers who care for your loved ones.</span>
           </p>
           
           {/* Trust Indicators */}
