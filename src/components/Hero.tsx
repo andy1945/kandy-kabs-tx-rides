@@ -19,13 +19,11 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
-            <span className="inline-block animate-slide-up [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards]">Door-to-door</span>{" "}
-            <span className="inline-block animate-slide-up [animation-delay:0.6s] opacity-0 [animation-fill-mode:forwards]">transportation</span>{" "}
-            <span className="inline-block animate-slide-up [animation-delay:0.8s] opacity-0 [animation-fill-mode:forwards] bg-gradient-to-r from-accent-light to-success bg-clip-text text-transparent">with dignity</span>
+            <span className="inline-block animate-slide-up [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards]">Safe medical</span>{" "}
+            <span className="inline-block animate-slide-up [animation-delay:0.6s] opacity-0 [animation-fill-mode:forwards] bg-gradient-to-r from-accent-light to-success bg-clip-text text-transparent">transportation</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in [animation-delay:1s] opacity-0 [animation-fill-mode:forwards]">
-            <span className="inline-block animate-fade-in [animation-delay:1.2s] opacity-0 [animation-fill-mode:forwards]">Wheelchair accessible rides, chemo & dialysis trips, nursing-home and hospital visits,</span>{" "}
-            <span className="inline-block animate-fade-in [animation-delay:1.4s] opacity-0 [animation-fill-mode:forwards]">and friendly caregiver drivers who treat your loved ones like family.</span>
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in [animation-delay:1s] opacity-0 [animation-fill-mode:forwards]">
+            Wheelchair accessible rides with compassionate drivers who care for your loved ones.
           </p>
           
           {/* Trust Indicators */}
