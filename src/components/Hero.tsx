@@ -1,9 +1,19 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar, Shield, Heart, Users } from "lucide-react";
 import heroImage from "@/assets/hero-transportation.jpg";
+import caringServiceImage from "@/assets/caring-service.jpg";
+import vehicleInteriorImage from "@/assets/vehicle-interior.jpg";
 import { useTypewriter } from "@/hooks/useTypewriter";
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const backgroundImages = [
+    heroImage,
+    caringServiceImage,
+    vehicleInteriorImage
+  ];
+
   const typewriterText = useTypewriter({
     words: [
       "Wheelchair accessible rides",
@@ -15,16 +25,33 @@ const Hero = () => {
     delaySpeed: 2000,
   });
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Images with Animation */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Professional medical transportation service in Princeton, TX"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent"></div>
+        {backgroundImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img 
+              src={image} 
+              alt={`Professional medical transportation service background ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60"></div>
       </div>
       
       {/* Content */}
