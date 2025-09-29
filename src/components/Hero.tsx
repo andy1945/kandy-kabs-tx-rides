@@ -70,9 +70,12 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in [animation-delay:2.4s] opacity-0 [animation-fill-mode:forwards]">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              <Calendar className="h-5 w-5" />
-              Book Your Ride Now
+            <Button variant="hero" size="lg" className="text-xl px-12 py-8 relative overflow-hidden group">
+              <span className="relative z-10 flex items-center gap-3">
+                <Calendar className="h-6 w-6" />
+                Book Your Ride Now
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white/80 text-white bg-white/10 hover:bg-white hover:text-primary backdrop-blur-sm">
               <Phone className="h-5 w-5" />
