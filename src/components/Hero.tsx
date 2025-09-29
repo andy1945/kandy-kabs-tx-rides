@@ -39,25 +39,7 @@ const Hero = () => {
               {typewriterText}
               <span className="animate-pulse">|</span>
             </span>
-            <br />
-            <span className="text-lg">with compassionate drivers who care for your loved ones.</span>
           </p>
-          
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm animate-scale-in [animation-delay:1.6s] opacity-0 [animation-fill-mode:forwards]">
-            <div className="flex items-center gap-2 animate-slide-up [animation-delay:1.8s] opacity-0 [animation-fill-mode:forwards] transform translate-y-4">
-              <Shield className="h-5 w-5" />
-              <span>Licensed & Insured</span>
-            </div>
-            <div className="flex items-center gap-2 animate-slide-up [animation-delay:2s] opacity-0 [animation-fill-mode:forwards] transform translate-y-4">
-              <Heart className="h-5 w-5" />
-              <span>Compassionate Care</span>
-            </div>
-            <div className="flex items-center gap-2 animate-slide-up [animation-delay:2.2s] opacity-0 [animation-fill-mode:forwards] transform translate-y-4">
-              <Users className="h-5 w-5" />
-              <span>Family-Trusted</span>
-            </div>
-          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in [animation-delay:2.4s] opacity-0 [animation-fill-mode:forwards]">

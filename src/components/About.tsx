@@ -62,10 +62,14 @@ const About = () => {
               without the stress. We're neighbors — we know local clinics, hospitals, and nursing homes — 
               and we value the trust families place in us.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Our locally owned Princeton, TX transportation service is built for families, seniors, 
               and anyone who needs a comfortable, dependable ride. Our drivers are trained, 
               background-checked, and focused on punctuality, safety, and compassion.
+            </p>
+            <p className="text-lg text-primary font-medium leading-relaxed">
+              We provide compassionate drivers who care for your loved ones with licensed & insured, 
+              family-trusted service.
             </p>
             <div className="mt-6 flex items-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
